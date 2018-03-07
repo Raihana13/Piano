@@ -1,0 +1,33 @@
+body{
+	background: #222;
+	 width: 700px;
+  float: center;
+}
+
+.reed{
+	height: 60px;
+	width: 700px;
+	background: #ddd;
+	border-radius: 6px;
+	margin: 1px;
+	position: relative; 
+}
+.reed:active{
+	background: #aaa;
+}
+.reed.black{
+	height: 30px;
+}
+
+.reed.black::before{
+	content: "";
+	display: black;
+	height: 50px;
+	right: 0px;
+	top: -15px;
+	width: 500px;
+	background-color: #111;
+	z-index: 100;
+	position: absolute;
+	border-radius: 5px;
+}
